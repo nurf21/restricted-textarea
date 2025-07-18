@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   function updateCounter(length) {
-    counter.textContent = `${length} / ${maxLength}`;
+    counter.textContent = `${length <= 250 ? length : 250} / ${maxLength}`;
 
     // Update progress bar
     const progress = (length / maxLength) * 100;
