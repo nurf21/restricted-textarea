@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Character Counter Text Area</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1><i class="fas fa-keyboard"></i> Character Counter</h1>
+      <div class="subtitle">Track your text length in real-time</div>
+    </header>
+
+    <div class="content">
+      <div class="input-container">
+        <label for="message">Write your message:</label>
+        <textarea id="message" placeholder="Start typing..."></textarea>
+        <div class="counter" id="counter">0 / 250</div>
+        <div class="progress-container">
+          <div class="progress-bar" id="progress-bar"></div>
+        </div>
+      </div>
+
+      <div class="features">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-sync-alt"></i>
+          </div>
+          <div class="feature-text">
+            <h3>Live Character Count</h3>
+            <p>The counter updates in real-time as you type, showing exactly how many characters you've used.</p>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-ban"></i>
+          </div>
+          <div class="feature-text">
+            <h3>Input Limitation</h3>
+            <p>When you reach the 250-character limit, you won't be able to type any further characters.</p>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-exclamation-triangle"></i>
+          </div>
+          <div class="feature-text">
+            <h3>Visual Feedback</h3>
+            <p>The border turns red and the counter changes color when you approach or reach the character limit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
